@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+        #form{
+            width:30%;
+            height:100vh;
+            margin-top:10px;
+            margin-bottom:10px;
+            margin:10px auto;
+            background-color:rgb(100, 100, 86);
+            border-radius:10px;
+            overflow:hidden;
+        }
+        #form  #form_data h1{
+            width:100%;
+            height:5%;
+            margin:0px 0px 10px;
+            padding:0px;
+            overflow:hidden;
+            text-align:center; 
+            font-size: 30px;
+        }
+        #form #form_data{
+            margin-left:10px;
+            margin-right:10px;
+            padding:10px;
+            font-size:20px;
+            box-sizing: border-box;   
+            overflow:hidden;
+        }
+        #form #form_data input[type="text"],#form #form_data input[type="email"],#form #form_data textarea{
+            margin-top:5px;
+            display:block;
+            width:95%;
+            padding:10px;
+            outline:none;
+            border:1px solid #aaa;
+            border-radius: 5px;
+        }
+        #form #form_data button{
+        width:100%;
+        height:50px;
+        margin-top:20px;
+        border:none;
+        outline:none;
+        font-size:15px;
+        font-weight:bold;
+        font-family:inherit;
+        background-color:#222;
+        color:white;
+        border-radius:5px;
+        cursor:pointer;
+    }
+       </style>
+</head>
+<body>
+    <nav>
+    <div id="container">
+        <div id="header">
+            <h1>Binayak Maharjan</h1>
+            <h2>(Acme Engineering College)</h2>
+        </div>
+        <div id="navbar">
+            <a href="home.html" >Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contactus.html" class="current">Contact Us</a>
+        </div>
+        <div id="content">
+            <div id="form" style="font-weight: bold;">
+            <form name="myform" id="form_data">
+                <h1>Enter Your Details</h1>
+                <label>Full Name:</label>
+                <input type="text" name="fullname" value="" placeholder="Enter your Full Name"/><br>
+                <label>Address:</label>
+                <br><label>District:</label>
+                <select name="District" value="Districts" >
+                    <option value="Kathmandu" selected>Kathmandu</option>
+                    <option value="Bhaktapur" >Bhaktapur</option>
+                    <option value="Lalitpur" >Lalitpur</option>
+                    <option value="Pokhara" >Pokhara</option>
+                    <option value="Chitwan" >Chitwan</option>
+                    <option value="Illam" >Illam</option>
+                    <option value="Bara" >Bara</option>
+                    <option value="Janakpur" >Janakpur</option>
+                </select>
+                <br><label>City/Town:</label>
+                <input type="text" name="City" value="" placeholder="Enter city or town"/><br>
+                <label>Phone No.:</label>
+                <input type="text" name="contact" value="" placeholder="Contact No."/>
+                <label>Email-ID:</label>
+                <input type="text" name="contact" value="" placeholder="Enter your Email_ID"/>
+                <label>Comment:</label><br>
+                <textarea name="comment" id="" cols="45" rows="5" placeholder="Please write down your comment."></textarea>
+                <button type="submit" name="submit">Submit</button>    
+            </form>
+            </div>
+        </div>
+        <div id="footer">
+             <p>Copyright © Binayak Maharjan. All Right's Reserved.</p>
+        </div>
+    </div>
+    </nav>
+</body>
+</html>
